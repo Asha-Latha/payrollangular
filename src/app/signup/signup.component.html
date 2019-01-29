@@ -1,0 +1,40 @@
+
+<div class="container-fluid" >
+  <br><br>
+  <div class="row">
+      <div class="col-sm-2">
+      <div class="sidenav">        
+      <img src="https://www.belrium.io/lib/img/logo.png" alt="Belrium logo"><span style="color: #AF070E">&nbsp; <b>Bel</b></span><span style="color: #ffffff"><b> Books</b></span>        
+                  <hr>
+                  <a href="#">About</a>
+                  <a class="active" href="../Signup/Signup.html">Signup</a>
+                  <a href="#">Contact</a>
+                  
+      </div>
+      </div>  
+      <div class="col-sm-5" style="float:right">
+          <!-- <form name="myform2"> -->
+              <form class="form-horizontal" [formGroup]="signUpForm" (ngSubmit)="onSubmit()"> 
+            <!-- <fieldset> -->
+              <div class="well clearfix">
+                <div class="form-group">
+                  <h3>Enter your details</h3>
+                   <!-- <label class="col-sm-2 control-label" for="companyName">Company Name</label>  -->
+                  <!-- Company Name:  -->
+                 Name: <input type="text" class="form-control rounded-0" formControlName="name" id="name" required="required" minlength="5">
+                  LastName:<input type="text" class="form-con  trol rounded-0" formControlName="lastName" id="lastname" required="required" minlength="5">
+                  Email: <input type="text" class="form-control rounded-0"  formControlName="email" id="email" required="required">  
+                  Password: <input type="text" class="form-control rounded-0"  formControlName="password" id="password" required="required">  <br>
+                  Confirm Password: <input type="text" class="form-control rounded-0"  formControlName="cpassword" id="cpassword" required="required">  
+                  CountryId:<input type="text" class="form-control rounded-0"  formControlName="cid" id="cid" required="required" minlength="5">  
+                  Country Code:<input type="text" class="form-control rounded-0"  formControlName="cc" id="cc" required="required"> 
+                  Type:<input id="type" formControlName="type" type="text" value="Merchant" class="form-control" required="required">
+                  <br>
+                  <button type="submit" class="btn btn-primary col-md-12" id="register" value="register"> Sign up </button>
+                </div>
+              </div>  
+            <!-- </fieldset> -->
+          </form>
+      </div>
+  </div>
+  </div>

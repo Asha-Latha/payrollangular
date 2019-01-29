@@ -1,0 +1,38 @@
+<div class="container-fluid" id="logindiv" >
+  <br><br>
+  <div class="row">
+          <div class="col-sm-2">
+          <div class="sidenav">        
+          <img src="https://www.belrium.io/lib/img/logo.png" alt="Belrium logo"><span style="color: #AF070E">&nbsp; <b>Bel</b></span><span style="color: #ffffff"><b> Books</b></span>        
+                      <hr>
+            <a href="#">About</a>  
+            <a class="active" href="../Login/Login.html">Login</a>
+            <a href="#">Contact</a>          
+                      
+          </div>
+          </div> 
+<div class="col-sm-4" id="loginform" style="float:right">
+  <!-- <form name="myform2" > -->
+      <fieldset>
+        <div class="well clearfix">
+          <div class="form group">
+            <h3>Welcome to <span style="color: #AF070E">Belrium</span> </h3>
+            <p>welcome back, please login to your account </p>
+            <h4> <span style="color: 	#66b3ff"><b>Login</b> </span></h4>
+            <!-- Email Address: <input type="text" id="email" class="form-control" placeholder="Email" minlength="0" maxlength="40" />
+            Password: <input type="password" name="pass1" id="password"  class="form-control" placeholder="Password"  minlength="0" maxlength="20"/> -->
+            <!-- <p><a href="Signup.html">Signup</a> -->
+            <!-- <span style="float:right"><a href=""> Forgot password? </a></span></p> -->
+            email add:<input type="text" class="form-control rounded-0" [(ngModel)]="loginUserData.email" name="email" required>       
+            password:<input type="password" class="form-control rounded-0" [(ngModel)]="loginUserData.password" name="password" required>
+            <button type="button" (click)="doLogin()" class="btn btn-primary col-md-12" value="Login" id="login">Login </button> <br> 
+            <label><input type="checkbox" id="remember" >Remember Me </label>
+            <span id="message"></span>
+          </div>
+        </div>  
+      </fieldset>
+    <!-- </form> -->
+    
+    </div>
+  
+</div>
